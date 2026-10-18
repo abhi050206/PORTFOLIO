@@ -1,12 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Abhishek Gohel | Blue Team Portfolio</title>
-  <meta name="description" content="Cybersecurity project hub of Abhishek Gohel: SOC, detection and log analysis projects with evidence.">
+
+  <!-- Basic SEO -->
+  <title>Abhishek Gohel | Cybersecurity &amp; Blue Team Portfolio</title>
+  <meta name="description" content="Abhishek Gohel's cybersecurity portfolio featuring SOC analysis, Wazuh SIEM, threat detection, log analysis, incident investigation, and Blue Team projects with evidence.">
+  <meta name="author" content="Abhishek Gohel">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Preferred URL for this page -->
+  <link rel="canonical" href="https://abhi050206.github.io/PORTFOLIO/">
+
+  <!-- Social sharing metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhishek Gohel | Cybersecurity &amp; Blue Team Portfolio">
+  <meta property="og:description" content="Explore Abhishek Gohel's SOC projects, Wazuh SIEM lab, threat detection, log analysis, and hands-on Blue Team work.">
+  <meta property="og:url" content="https://abhi050206.github.io/PORTFOLIO/">
+  <meta property="og:site_name" content="Abhishek Gohel Portfolio">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abhishek Gohel | Cybersecurity Portfolio">
+  <meta name="twitter:description" content="SOC analysis, Wazuh SIEM, threat detection, log analysis, and Blue Team projects by Abhishek Gohel.">
+
+  <!-- Structured data: helps search engines identify the person
+       represented by this portfolio and connect professional profiles. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abhishek Gohel",
+    "url": "https://abhi050206.github.io/PORTFOLIO/",
+    "jobTitle": "Aspiring SOC Analyst",
+    "description": "Final-year Computer Engineering student at L.D. College of Engineering, Ahmedabad, focused on cybersecurity, SOC analysis, Blue Team operations, SIEM monitoring, threat detection, and log analysis.",
+    "sameAs": [
+      "https://www.linkedin.com/in/abhishekgohel05/",
+      "https://github.com/abhi050206"
+    ],
+    "knowsAbout": [
+      "Cybersecurity",
+      "SOC Analysis",
+      "Blue Team Operations",
+      "SIEM Monitoring",
+      "Wazuh",
+      "Splunk",
+      "Threat Detection",
+      "Log Analysis",
+      "Incident Investigation",
+      "MITRE ATT&CK"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="nav">
     <a class="brand" href="#top">&gt;_ abhishek.gohel</a>
@@ -28,11 +78,13 @@
       <h1>Abhishek Gohel</h1>
       <p class="headline">Blue Team · Threat Detection · Log Analysis</p>
       <p class="lead">I build small detection and analysis tools, then test them against real logs and alerts. This site shows the work behind my CV: what I built, how I tested it, and the evidence behind each claim.</p>
+
       <div class="btn-row">
         <a class="btn primary" href="#projects">View projects</a>
-        <a class="btn" href="https://github.com/abhi050206" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://linkedin.com/in/abhishekgohel05" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/abhi050206" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/abhishekgohel05/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
+
       <div class="stats">
         <div><strong>98.2%</strong><span>test accuracy on 82,486 emails</span></div>
         <div><strong>~10.5 s</strong><span>to scan a /24 (254 hosts)</span></div>
@@ -45,6 +97,7 @@
       <h2>About</h2>
       <div class="about-grid">
         <p>I'm a final-year Computer Engineering student at L.D. College of Engineering, graduating in 2027. I'm drawn to the defender side of security: reading logs, working out what an alert actually means, and writing detections that catch real behaviour without drowning an analyst in noise.</p>
+
         <ul class="facts">
           <li><span>Focus</span>SOC / Blue Team, alert triage, log analysis</li>
           <li><span>Currently</span>Seeking a SOC internship or trainee / L1 role</li>
@@ -63,29 +116,60 @@
     <section id="tools" class="section">
       <h2>Where I Used Each Tool</h2>
       <p class="sub">Each tool is tied to the project where I actually used it.</p>
+
       <div class="tool-grid">
-        <div class="tool"><h3>Wazuh</h3><p>Home SOC lab: custom rule 100010 built on base rule 60122.</p></div>
-        <div class="tool"><h3>Sysmon</h3><p>Home SOC lab: triaged the level-15 rule 92213 alert.</p></div>
-        <div class="tool"><h3>Python</h3><p>Log analyzer, phishing detector, vulnerability scanner and SWATH components.</p></div>
-        <div class="tool"><h3>Nmap</h3><p>Local vulnerability scanner, through python-nmap.</p></div>
-        <div class="tool"><h3>MITRE ATT&amp;CK</h3><p>T1110 in the Wazuh rule and log analyzer; T1078 in the log analyzer.</p></div>
-        <div class="tool"><h3>Splunk</h3><p>HTB Academy SOC path. My SWATH formatter also outputs Splunk-format events.</p></div>
-        <div class="tool"><h3>scikit-learn</h3><p>Phishing detector: TF-IDF and Logistic Regression, with a Streamlit demo.</p></div>
+        <div class="tool">
+          <h3>Wazuh</h3>
+          <p>Home SOC lab: custom rule 100010 built on base rule 60122.</p>
+        </div>
+
+        <div class="tool">
+          <h3>Sysmon</h3>
+          <p>Home SOC lab: triaged the level-15 rule 92213 alert.</p>
+        </div>
+
+        <div class="tool">
+          <h3>Python</h3>
+          <p>Log analyzer, phishing detector, vulnerability scanner and SWATH components.</p>
+        </div>
+
+        <div class="tool">
+          <h3>Nmap</h3>
+          <p>Local vulnerability scanner, through python-nmap.</p>
+        </div>
+
+        <div class="tool">
+          <h3>MITRE ATT&amp;CK</h3>
+          <p>T1110 in the Wazuh rule and log analyzer; T1078 in the log analyzer.</p>
+        </div>
+
+        <div class="tool">
+          <h3>Splunk</h3>
+          <p>HTB Academy SOC path. My SWATH formatter also outputs Splunk-format events.</p>
+        </div>
+
+        <div class="tool">
+          <h3>scikit-learn</h3>
+          <p>Phishing detector: TF-IDF and Logistic Regression, with a Streamlit demo.</p>
+        </div>
       </div>
     </section>
 
     <section id="learning" class="section">
       <h2>Practical Learning</h2>
       <p class="sub">Hands-on training, kept separate from certifications.</p>
+
       <div class="cards two">
         <article class="card static">
           <h3>Hack The Box Academy: SOC Analyst Job Role Path</h3>
           <p class="meta">Completed July 2026</p>
           <p>Hands-on modules covering Splunk, digital forensics and incident response, IDS/IPS, malware analysis and Active Directory attacks.</p>
+
           <div class="btn-row small">
-            <a class="btn" href="https://academy.hackthebox.com/achievement/2331213/path/390" target="_blank" rel="noopener">View HTB completion record</a>
+            <a class="btn" href="https://academy.hackthebox.com/achievement/2331213/path/390" target="_blank" rel="noopener noreferrer">View HTB completion record</a>
           </div>
         </article>
+
         <article class="card static">
           <h3>Home lab practice</h3>
           <p class="meta">Ongoing</p>
@@ -96,18 +180,21 @@
 
     <section id="certs" class="section">
       <h2>Certifications</h2>
+
       <div class="cards three">
         <article class="card static">
           <h3>HTB Academy SOC Analyst Job Role Path</h3>
           <p class="meta">Completed, Jul 2026</p>
           <p>167 sections: Splunk, DFIR, IDS/IPS, malware analysis, AD attacks.</p>
-          <a class="more" href="https://academy.hackthebox.com/achievement/2331213/path/390" target="_blank" rel="noopener">Verify on HTB Academy →</a>
+          <a class="more" href="https://academy.hackthebox.com/achievement/2331213/path/390" target="_blank" rel="noopener noreferrer">Verify on HTB Academy →</a>
         </article>
+
         <article class="card static">
           <h3>ISC2 Certified in Cybersecurity (CC)</h3>
           <p class="meta">Coursework complete · Exam pending</p>
           <p>All five domains studied. <strong>Not yet certified.</strong></p>
         </article>
+
         <article class="card static">
           <h3>Cisco Cybersecurity Essentials</h3>
           <p class="meta">Jul 2026</p>
@@ -119,16 +206,19 @@
 
     <section id="community" class="section">
       <h2>Achievements &amp; Community</h2>
+
       <div class="cards two">
         <article class="card static">
           <h3>LDCE Central Newsletter Design Team</h3>
           <p class="meta">Sep 2024 – Jul 2025</p>
           <p>Member of the design team for TechPulse, the college's quarterly newsletter, and credited in the Oct–Dec 2024, Jan–Mar 2025 and Apr–Jun 2025 issues. Designed the Vision &amp; Mission pages, designed the Editorial Board page in some issues, and helped teammates with their layouts. Received a Certificate of Appreciation from the Principal for active participation and commitment to the team.</p>
         </article>
+
         <article class="card static">
           <h3>SWATH group project</h3>
           <p>Contributed the Blue Team components in a four-person team (two Red, two Blue): a SIEM event formatter, a logger and a detection-risk dataset covering 31 tools.</p>
         </article>
+
         <article class="card static">
           <h3>Academics</h3>
           <p>B.E. Computer Engineering, L.D. College of Engineering (GTU). CPI 7.80 / 10 through Semester 6.</p>
@@ -139,15 +229,18 @@
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p class="sub">Open to SOC internship and trainee / L1 opportunities.</p>
+
       <div class="btn-row">
         <a class="btn primary" href="mailto:abhishekgohel747@gmail.com">abhishekgohel747@gmail.com</a>
-        <a class="btn" href="https://github.com/abhi050206" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://linkedin.com/in/abhishekgohel05" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/abhi050206" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/abhishekgohel05/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </section>
   </main>
 
-  <footer><p>© <span id="year"></span> Abhishek Gohel</p></footer>
+  <footer>
+    <p>© <span id="year"></span> Abhishek Gohel</p>
+  </footer>
 
   <div class="modal" id="modal" aria-hidden="true">
     <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
